@@ -1,0 +1,331 @@
+* {
+    box-sizing: border-box;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+h2 {
+    font-family: 'Caveat', cursive;
+    padding-bottom: 2px;
+    font-size: 3.5rem;
+}
+
+/* this makes sure all images are not too big on the screen  */
+img {
+    width: 100%;
+}
+
+
+/* header styles start  */
+
+
+.menu {
+    display: none;
+
+}
+
+#burger-menu {
+    display: inline;
+    float: right;
+    font-size: 1rem;
+}
+
+header {
+    height: 60vh;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(./img1.jpg);
+}
+
+.header-class {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 150px;
+    left: 5px;
+
+}
+
+.my-name {
+    font-size: 4.5rem;
+    font-family: 'Caveat', cursive;
+}
+
+.developer-text {
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+
+}
+
+
+#hero-icons {
+    float: right;
+    color: black;
+    font-size: 2rem;
+    position: relative;
+    bottom: 200px;
+    right: 10px;
+
+}
+
+
+button:hover {
+    color: palevioletred
+}
+
+
+.contact-button button {
+    position: relative;
+    left: -25px;
+    top: 15px;
+    padding: 5px;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 300;
+    cursor: pointer;
+    background-color: black;
+
+}
+
+
+.tech-stack {
+    display: flex;
+    font-size: 2rem;
+    justify-content: space-around;
+    position: relative;
+    top: 250px;
+}
+
+/* header style end  */
+
+
+
+/* About me section styles start  */
+.about-me {
+    text-align: center;
+    font-size: 30px;
+    padding: 30px;
+
+}
+
+/* this is to change the word front-end developer to pink */
+.dev {
+    color: palevioletred;
+    font-weight: 600;
+
+}
+
+/* About me section end  */
+
+
+
+/* Portfolio styles start  */
+
+.portfolio-title {
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+
+.card-body {
+    margin: 20px;
+    background-color: pink;
+    padding: 30px;
+    width: 90%;
+    height: 40vh;
+    min-height: 240px;
+    text-align: center;
+}
+
+.project-title {
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* Portfolio style end  */
+
+
+
+/* Contact Me styles start  */
+
+.in-touch {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 2rem 2rem;
+    text-align: center;
+    font-size: 25px;
+    padding: 30px;
+}
+
+.in-touch-title {
+    text-align: center;
+    padding: 2px;
+    font-weight: 800;
+    margin-top: 30px;
+}
+
+
+.socials {
+    font-size: 30px;
+    font-weight: 900;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+/* Contact Me style end  */
+
+
+
+/* form style start  */
+
+.form {
+    display: flex;
+    background-color: pink;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.3rem;
+    align-content: space-between;
+}
+
+
+.form {
+    border-width: 5px;
+    border: 3px;
+    padding-bottom: 15px;
+    
+}
+
+.form-child {
+    padding: 4px;
+}
+
+.form-title {
+    margin: 8px;
+    padding: 30px;
+    font-size: 45px;
+}
+
+.form-button {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 300;
+    cursor: pointer;
+    background-color: black;
+    padding: 5px;
+
+}
+
+
+
+.form-button:hover {
+    color: palevioletred;
+}
+
+
+
+
+/* footer style  */
+
+
+footer {
+    font-size: 0.6rem;
+    font-weight: 800;
+    text-align: center;
+    padding: 10px;
+}
+
+/* form style ends  */
+
+
+
+
+
+/* /* media query */
+@media screen and (min-width: 40em) {
+
+.my-projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        justify-content: center;
+
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+
+.tech-stack {
+    display:flex;
+    float: right;
+    margin: 30px;
+    justify-content: space-around;
+}
+
+#tech-icons{
+    padding: 40px;
+    font-size: 2rem;
+
+}
+
+.hero-image {
+    font-size: 3rem;
+}
+
+.about-me{
+    justify-content: center;
+    padding: 20opx;
+}
+
+
+.card-body{
+    display: flex;
+    flex: wrap;
+    justify-content: space-around;
+    width: 300px;
+    min-height: 240px;
+    margin: 15px;
+    padding: 30px 30px 15px 30px;
+}
+
+.portfolio-title {
+    padding: 80px;
+
+
+}
+
+.in-touch {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: auto;
+    position: relative;
+    top: 300px;
+    right: 500px; 
+    font-size: 2rem;
+
+}
+
+.form {
+    position: relative;
+    left: 350px;
+    bottom: 500px;
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+
+}
